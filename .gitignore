@@ -4,8 +4,8 @@ build/
 local.properties
 **/build/
 .idea/
-.fleet/
-.vscode/
+**/.fleet/
+**/.vscode/
 .run/
 
 # IntelliJ IDEA
