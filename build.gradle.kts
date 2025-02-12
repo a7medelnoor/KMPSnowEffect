@@ -6,4 +6,15 @@ plugins {
     alias(libs.plugins.composeMultiplatform) apply false
     alias(libs.plugins.composeCompiler) apply false
     alias(libs.plugins.kotlinMultiplatform) apply false
+    id("org.owasp.dependencycheck") version "8.4.3"
+}
+
+dependencyCheck {
+    failBuildOnCVSS = 7f
+    formats = listOf("HTML", "JSON")
+    suppressionFile = "suppression.xml"
+    analyzers {
+        assemblyEnabled = false
+        nodeEnabled = false
+    }
 }
