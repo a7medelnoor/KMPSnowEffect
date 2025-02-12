@@ -2,10 +2,14 @@
 .gradle/
 build/
 local.properties
+**/build/
+.idea/
+.fleet/
+.vscode/
+.run/
 
 # IntelliJ IDEA
 *.iml
-.idea/
 *.iws
 *.ipr
 
@@ -14,6 +18,8 @@ local.properties
 *.aab
 *.ap_
 *.dex
+.externalNativeBuild/
+.cxx/
 
 # iOS & Xcode
 xcuserdata/
@@ -29,6 +35,7 @@ DerivedData
 *.xcuserstate
 *.xcworkspace
 Pods/
+.build/
 
 # Kotlin
 *.class
@@ -41,6 +48,7 @@ Pods/
 *.zip
 *.tar.gz
 *.rar
+.kotlin/
 
 # macOS
 .DS_Store
@@ -56,3 +64,13 @@ Desktop.ini
 bin/
 gen/
 out/
+
+# KMP specific
+.wasmkit/
+.nodejs/
+.compose/
+composeApp/.gradle/
+composeApp/build/
+iosApp/Pods/
+iosApp/iosApp.xcworkspace/
+iosApp/iosApp.xcodeproj/xcuserdata/
