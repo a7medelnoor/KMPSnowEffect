@@ -46,3 +46,31 @@ We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public S
 If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
 
 You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+
+## Repository Statistics
+
+### Language Distribution
+- **Kotlin (88.0%)**: Largest portion because it includes:
+  - KMP shared code in `/composeApp/commonMain`
+  - Android-specific code
+  - Other Kotlin platform-specific code
+  - Gradle build files (`.kt` extensions)
+
+- **Swift (6.1%)**: From:
+  - iOS app code in `/iosApp`
+  - SwiftUI integration files
+  - iOS-specific configurations
+
+- **HTML (3.4%)**: From:
+  - Web platform templates
+  - Documentation files
+  - Generated web resources
+
+- **Shell (1.5%)**: From:
+  - Gradle wrapper scripts (`gradlew`)
+  - Build scripts
+  - CI/CD configuration files
+
+- **CSS (1.0%)**: From:
+  - Web styling files
+  - Resource files for web platform
