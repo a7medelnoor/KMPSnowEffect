@@ -36,12 +36,15 @@ jobs:
           project: 'KMP Snow Effect'
           path: '.'
           format: 'HTML'
-          failOnCVSS: 7
-          
+          out: 'reports'
+          args: >
+            --failOnCVSS 7
+            --suppression suppression.xml
+            
       - name: Upload Security Report
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: dependency-check-report
-          path: dependency-check-report.html
+          path: reports/dependency-check-report.html
           retention-days: 7 
