@@ -10,11 +10,14 @@ plugins {
 }
 
 dependencyCheck {
-    failBuildOnCVSS = 7f
-    formats = listOf("HTML", "JSON")
+    autoUpdate = true
+    failBuildOnCVSS = 7.0f
+    format = "ALL"
+    outputDirectory = layout.buildDirectory.dir("reports").get().asFile
     suppressionFile = "suppression.xml"
-    analyzers {
-        assemblyEnabled = false
-        nodeEnabled = false
-    }
+    scanConfigurations = listOf("runtimeClasspath", "compileClasspath")
+}
+
+tasks.named("dependencyCheckAnalyze") {
+    dependsOn("clean")
 }
