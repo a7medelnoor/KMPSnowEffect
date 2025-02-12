@@ -2,6 +2,30 @@
 
 A Kotlin Multiplatform project that implements a beautiful snow effect animation for Android, iOS, and Web platforms using Compose Multiplatform.
 
+## Dependencies & Versions
+
+### Kotlin & Compose
+- Kotlin Multiplatform: 1.9.22
+- Compose Multiplatform: 1.5.11
+- Kotlin Wasm: 1.9.22
+
+### Android
+- Android Gradle Plugin: 8.2.0
+- Android Compile SDK: 34
+- Android Min SDK: 24
+
+### Libraries
+- Compose Material3: 1.1.2
+- Kotlin Coroutines: 1.7.3
+- Kotlin Serialization: 1.6.2
+
+### Build & Tools
+- Gradle: 8.5
+- JVM Target: 17
+- Xcode: 15.0.1
+
+## Project Structure
+
 This is a Kotlin Multiplatform project targeting Android, iOS, Web.
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
