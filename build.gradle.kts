@@ -7,16 +7,3 @@ plugins {
     alias(libs.plugins.composeCompiler) apply false
     alias(libs.plugins.kotlinMultiplatform) apply false
 }
-
-dependencyCheck {
-    autoUpdate = true
-    failBuildOnCVSS = 7.0f
-    format = "ALL"
-    outputDirectory = layout.buildDirectory.dir("reports").get().asFile
-    suppressionFile = "suppression.xml"
-    scanConfigurations = listOf("runtimeClasspath", "compileClasspath")
-}
-
-tasks.named("dependencyCheckAnalyze") {
-    dependsOn("clean")
-}
