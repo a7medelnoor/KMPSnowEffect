@@ -1,19 +1,6 @@
 # KMP Snow Effect
 
-[![Security Scan](https://github.com/a7medelnoor/KMPSnowEffect/actions/workflows/security-scan.yml/badge.svg)](https://github.com/a7medelnoor/KMPSnowEffect/actions/workflows/security-scan.yml)
-
 A Kotlin Multiplatform project that implements a beautiful snow effect animation for Android, iOS, and Web platforms using Compose Multiplatform.
-
-## Security
-
-This project takes security seriously. We follow these practices:
-
-- Regular dependency updates
-- Security scanning through GitHub Actions
-- No sensitive information in the codebase
-- Minimal dependency usage
-
-Please check our [Security Policy](SECURITY.md) for more information.
 
 This is a Kotlin Multiplatform project targeting Android, iOS, Web.
 
@@ -26,7 +13,6 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Web.
 
 * `/iosApp` contains iOS applications. Even if you're sharing your UI with Compose Multiplatform, 
   you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
 [Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
