@@ -1,0 +1,58 @@
+# Gradle
+.gradle/
+build/
+local.properties
+
+# IntelliJ IDEA
+*.iml
+.idea/
+*.iws
+*.ipr
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# iOS & Xcode
+xcuserdata/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcworkspace
+Pods/
+
+# Kotlin
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build and Debug dirs
+bin/
+gen/
+out/
